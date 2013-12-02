@@ -45,3 +45,8 @@ plugins=(git z extract)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+zstyle ":completion:*:commands" rehash 1
