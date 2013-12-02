@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=$dir/backup             # old dotfiles backup directory
-files=`ls -A -I install.sh -I backup`
+files=`ls -A -I install.sh -I .git -I .gitignore -I .gitmodules -I backup`
 
 ##########
 
