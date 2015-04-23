@@ -40,13 +40,19 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git z extract)
+plugins=(git z extract npm)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+export ANDROID_HOME=$HOME/tools/android-sdk-macosx
+export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:/usr/local/heroku/bin:$HOME/bin:$PATH"
 
 zstyle ":completion:*:commands" rehash 1
+HISTFILE=~/.zsh_history
+SAVEHIST=100000
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
