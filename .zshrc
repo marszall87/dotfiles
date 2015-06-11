@@ -3,6 +3,7 @@ source "$HOME/dotfiles/antigen/antigen.zsh"
 antigen-use oh-my-zsh
 
 antigen bundle git
+antigen bundle git-flow
 antigen bundle svn
 antigen bundle z
 antigen bundle extract
