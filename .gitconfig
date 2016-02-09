@@ -9,6 +9,7 @@
 	default = simple
 [core]
 	autocrlf = input
+	editor = vim
 [http]
 	sslVerify = false
 [credential]
