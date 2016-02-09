@@ -23,6 +23,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'moll/vim-node'
 Plugin 'tpope/vim-commentary'
+Plugin 'Valloric/YouCompleteMe'
 
 " ----- Working with Git ----------------------------------------------
 Plugin 'airblade/vim-gitgutter'
@@ -91,6 +92,10 @@ augroup mySyntastic
   au FileType tex let b:syntastic_mode = "passive"
 augroup END
 
+" ------- Valloric/YouCompleteMe --------
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
+
 " ----- airblade/vim-gitgutter settings -----
 " Required after having changed the colorscheme
 hi clear SignColumn
@@ -107,7 +112,6 @@ augroup mydelimitMate
   au FileType python let b:delimitMate_nesting_quotes = ['"', "'"]
 augroup END
 
-map <Tab> <C-W>w
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprevious<CR>
-nnoremap <silent> <Esc><Esc> :let @/=""<CR>
+"nnoremap <silent> <Esc><Esc> :let @/=""<CR>
