@@ -25,6 +25,10 @@ Plugin 'moll/vim-node'
 Plugin 'tpope/vim-commentary'
 Plugin 'Valloric/YouCompleteMe'
 
+" ----- Snippets
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
 " ----- Working with Git ----------------------------------------------
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
@@ -95,6 +99,11 @@ augroup END
 " ------- Valloric/YouCompleteMe --------
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_add_preview_to_completeopt = 0
+set completeopt-=preview
+
+" ------- SirVer/ultisnips ------
+let g:UltiSnipsExpandTrigger="<c-j>"
 
 " ----- airblade/vim-gitgutter settings -----
 " Required after having changed the colorscheme

@@ -1,8 +1,10 @@
 {
-  "libs": [ "browser", "ecma6" ],
+  "libs": [ "browser", "ecma6", "chai" ],
   "plugins": {
     "node": {},
+    "node_resolve": {},
     "complete_strings": {},
+    "modules": {},
     "es_modules": {}
   }
 }
