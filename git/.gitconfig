@@ -9,7 +9,8 @@
 	default = simple
 [core]
 	autocrlf = input
-	editor = vim
+  editor = vim
+  excludesfile = ~/.gitignore_global
 [http]
 	sslVerify = false
 [credential]
