@@ -24,4 +24,4 @@ export NVM_DIR="/Users/mnykiel/.nvm"
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
 
 [ -e "${HOME}/dotfiles/.zsh_aliases" ] && source "${HOME}/dotfiles/.zsh_aliases"
-eval `dircolors $HOME/dotfiles/dircolors.ansi-dark`
+eval `dircolors $HOME/.zsh/dircolors`
