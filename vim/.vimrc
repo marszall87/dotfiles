@@ -10,7 +10,6 @@ Plugin 'gmarik/Vundle.vim'
 
 " ----- Making Vim look good ------------------------------------------
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'tomasr/molokai'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
@@ -21,13 +20,14 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'scrooloose/syntastic'
 Plugin 'kien/ctrlp.vim'
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'moll/vim-node'
 Plugin 'tpope/vim-commentary'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'tpope/vim-unimpaired'
 
-" ----- Snippets
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+" ----- Additional programmer's tools ---------------------------------
+" Plugin 'moll/vim-node'
+" Plugin 'Valloric/YouCompleteMe'
+" Plugin 'SirVer/ultisnips'
+" Plugin 'honza/vim-snippets'
 
 " ----- Working with Git ----------------------------------------------
 Plugin 'airblade/vim-gitgutter'
@@ -35,6 +35,8 @@ Plugin 'tpope/vim-fugitive'
 
 " ----- Other text editing features -----------------------------------
 Plugin 'Raimondi/delimitMate'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
 
 call vundle#end()
 
@@ -44,9 +46,12 @@ filetype plugin indent on
 set backspace=indent,eol,start
 set ruler
 set number
+set relativenumber
 set showcmd
 set incsearch
 set hlsearch
+set hidden
+set scrolloff=1
 
 syntax on
 
@@ -97,13 +102,13 @@ augroup mySyntastic
 augroup END
 
 " ------- Valloric/YouCompleteMe --------
-let g:ycm_autoclose_preview_window_after_completion = 1
-let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_add_preview_to_completeopt = 0
-set completeopt-=preview
+" let g:ycm_autoclose_preview_window_after_completion = 1
+" let g:ycm_autoclose_preview_window_after_insertion = 1
+" let g:ycm_add_preview_to_completeopt = 0
+" set completeopt-=preview
 
 " ------- SirVer/ultisnips ------
-let g:UltiSnipsExpandTrigger="<c-j>"
+" let g:UltiSnipsExpandTrigger="<c-j>"
 
 " ----- airblade/vim-gitgutter settings -----
 " Required after having changed the colorscheme
@@ -122,5 +127,8 @@ augroup mydelimitMate
 augroup END
 
 nnoremap <C-n> :bnext<CR>
-nnoremap <C-p> :bprevious<CR>
-"nnoremap <silent> <Esc><Esc> :let @/=""<CR>
+nnoremap <C-x> :bd<CR>
+
+let g:ctrlp_cmd = 'CtrlPMixed'
+
+nnoremap <silent> <Esc><Esc> :let @/=""<CR>
