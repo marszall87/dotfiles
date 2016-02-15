@@ -14,6 +14,8 @@ if ! zgen saved; then
   zgen oh-my-zsh plugins/z
   zgen oh-my-zsh plugins/extract
   zgen oh-my-zsh plugins/nvm
+  zgen oh-my-zsh plugins/npm
+  zgen oh-my-zsh plugins/brew
   zgen load zsh-users/zsh-syntax-highlighting
   zgen load zsh-users/zsh-completions src
 
