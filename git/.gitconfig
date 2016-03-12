@@ -1,17 +1,15 @@
 [user]
-	email = mnykiel@task.gda.pl
-	name = Michał Nykiel
+  email = michal.nykiel@spartez.com
+  name = Michał Nykiel
 
 [alias]
-	graph = log --graph --full-history --all --color --pretty=tformat:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s%x20%x1b[33m(%an)%x1b[0m"
-	s = status --short
+  graph = log --graph --full-history --all --color --pretty=tformat:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s%x20%x1b[33m(%an)%x1b[0m"
+  s = status --short
 [push]
-	default = simple
+  default = simple
 [core]
-	autocrlf = input
+  autocrlf = input
   editor = vim
   excludesfile = ~/.gitignore_global
-[http]
-	sslVerify = false
 [credential]
-	helper = cache
+  helper = cache

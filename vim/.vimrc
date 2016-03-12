@@ -38,6 +38,12 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 
+" ----- JIRA ----------------------------------------------------------
+Plugin 'mnpk/vim-jira-complete'
+let g:jiracomplete_url = 'https://jira.spartez.com'
+let g:jiracomplete_username = 'mnykiel'
+imap <silent> <unique> <leader>j <Plug>JiraComplete
+
 call vundle#end()
 
 filetype plugin indent on
