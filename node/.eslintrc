@@ -1,8 +1,5 @@
 {
   "extends": "eslint:recommended",
-  "ecmaFeatures": {
-    "modules": true
-  },
   "env": {
     "browser": true,
     "node": true,
@@ -15,6 +12,11 @@
       2,
       "single"
     ],
-    "no-console": 0
+    "no-console": 1,
+    "no-unused-vars": 1
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
   }
 }
