@@ -61,8 +61,6 @@ set scrolloff=1
 
 syntax on
 
-set mouse=a
-
 " ----- Plugin-Specific Settings --------------------------------------
 
 " ----- altercation/vim-colors-solarized settings -----
