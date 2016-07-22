@@ -58,6 +58,7 @@ set incsearch
 set hlsearch
 set hidden
 set scrolloff=1
+set expandtab
 
 syntax on
 
