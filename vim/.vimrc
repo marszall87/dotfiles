@@ -59,6 +59,7 @@ set hlsearch
 set hidden
 set scrolloff=1
 set expandtab
+set clipboard=unnamed
 
 syntax on
 
