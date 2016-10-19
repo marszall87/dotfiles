@@ -1,5 +1,5 @@
 {
-  "libs": [ "browser", "ecma6", "chai" ],
+  "libs": [ "browser" ],
   "plugins": {
     "node": {},
     "node_resolve": {},
