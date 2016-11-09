@@ -16,11 +16,13 @@ if ! zgen saved; then
   zgen oh-my-zsh plugins/nvm
   zgen oh-my-zsh plugins/npm
   zgen oh-my-zsh plugins/brew
-  zgen load zsh-users/zsh-syntax-highlighting
   zgen load zsh-users/zsh-completions src
 
   # theme
-  zgen load marszall87/nodeys-zsh-theme nodeys
+  zgen load mafredri/zsh-async
+  zgen load marszall87/lambda-pure
+
+  zgen load zsh-users/zsh-syntax-highlighting
 
   zgen save
 fi
